@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    background-image: url('bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+ }
+  
+
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #aaadb4;
+    /* z-index: 110; */
+}
+
+.taskbar img {
+    border-radius: 9px;
+}
+
+.right {
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    /* margin: 7px 0;
+    height: 95%;
+    width: 20vw;
+    height: 100%; */
+}
+
+.startmenu {
+    position: absolute;
+    bottom: -660px;
+    /* display: flex;
+    justify-content: center; */
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.startmenu img {
+    border-radius: 23px;
+    width: 451px;
+    height: 500px;
+
+}
+
+.icons {
+    padding: 22px;
+}
