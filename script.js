@@ -1,12 +1,11 @@
-let taskbar = document.getElementsByClassName("taskbar")[0]
-let startmenu = document.getElementsByClassName("startmenu")[0]
+const taskbar = document.querySelector(".taskbar");
+const startmenu = document.querySelector(".startmenu");
 
-taskbar.addEventListener('click', () => {
-    if (startmenu.style.bottom == "50px") {
-        startmenu.style.bottom = "-655px"
-    }
-
-    else {
-        startmenu.style.bottom = "50px"
-    }
-})
+if (taskbar && startmenu) {
+    taskbar.addEventListener('click', () => {
+        const currentBottom = startmenu.style.bottom;
+        startmenu.style.bottom = currentBottom === "50px" ? "-655px" : "50px";
+    });
+} else {
+    console.warn("Taskbar or startmenu element not found");
+}
